@@ -1,0 +1,10 @@
+language: none
+
+build:
+  ci:
+    - ./build.sh
+
+integrations:
+  hub:
+    - integrationName: "trriplejay docker hub"
+      type: docker

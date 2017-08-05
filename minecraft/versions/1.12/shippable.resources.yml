@@ -1,0 +1,9 @@
+resources:
+  - name: minecraft_img_1.12
+    type: image
+    flags:
+      - artifacts
+    pointer:
+      sourceName: softsrv/minecraft
+    seed:
+      versionName: latest
