@@ -1,5 +1,5 @@
 jobs:
-  - name: minecraft_runCI
+  - name: flavors_runCI
     type: runCI
     steps:
       - OUT: minecraft_img_1.12
