@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export PIDS=()
-export VERSIONS=(1.11.2 1.12)
+export VERSIONS=(1.11.2 1.12 1.12.2)
 
 build() {
   for version in ${VERSIONS[*]};

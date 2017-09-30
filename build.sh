@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PIDS=()
+export ROOT_PIDS=()
 export FLAVORS=("minecraft")
 
 build() {
@@ -10,11 +10,11 @@ build() {
     echo "building image: $FULL_IMAGE"
     pushd $flavor
     ./build.sh &
-    PIDS[${i}]=$!
+    ROOT_PIDS[${i}]=$!
     popd
   done
 
-  for pid in ${PIDS[*]};
+  for pid in ${ROOT_PIDS[*]};
   do
     echo "waiting on process $pid"
     wait $pid
